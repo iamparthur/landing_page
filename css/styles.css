@@ -133,6 +133,8 @@ li {
 @media screen and (max-width: 1300px) {
   .phone {
     margin: 0;
+    color: #ffffff;
+    text-decoration: none;
   }
 }
 
@@ -584,6 +586,9 @@ li {
   .play-button--1 {
     width: 15px;
     height: 15px;
+  }
+  .subtitle--black {
+    text-transform: capitalize;
   }
 }
 
@@ -1233,6 +1238,157 @@ input::placeholder {
 }
 /* Section Fifth END*/
 
+/* Section cCtalog Start */
+.catalog-title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #e3b873;
+  margin-bottom: 47px;
+}
+
+.navigation-list__catalog {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-list__catalog a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+  font-family: Nunito Sans;
+}
+
+.navigation-list__catalog a:hover {
+  color: #e3b873;
+  transition: color 0.5s;
+}
+
+.catalog {
+  background-image: url("../images/image_overlay.jpg");
+  background-size: cover;
+  height: 864px;
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.cataog-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation-list__catalog {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog-title {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 47px;
+  color: #e3b873;
+}
+
+.navigation-list__catalog a:hover {
+  color: #e3b873;
+  transition: color 0.5s;
+}
+
+.navigation-list__catalog a {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 38px;
+  color: #ffffff;
+  text-decoration: 0;
+}
+
+.navigation-list__catalog li,
+a {
+  margin-bottom: 7px;
+}
+
+.catalog-gallery {
+  display: flex;
+}
+
+.left-col {
+  margin-top: -45px;
+}
+
+.right-col {
+  margin-top: -120px;
+  margin-bottom: 37px;
+  margin-left: 43px;
+}
+
+.catalog-images__col__left_one {
+  margin-bottom: 39px;
+}
+
+.catalog-images__col__right_one {
+  margin-bottom: 37px;
+}
+
+.catalog-wrap {
+  margin-top: 140px;
+}
+
+.catalog-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1299px) {
+  .navigation-list__catalog {
+    display: none;
+  }
+  .cataog-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .catalog-title {
+    text-align: center;
+    margin-top: -250px;
+  }
+  .catalog-gallery {
+    display: none;
+  }
+  .catalog-overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .catalog {
+    width: 340px;
+    height: 365px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -183px;
+  }
+}
+
+/* Section Catalog End */
+
 /* Section Sixth Start */
 .section-sixth {
   height: 954px;
@@ -1288,6 +1444,14 @@ input::placeholder {
     position: static;
     width: 100%;
     height: 500px;
+  }
+  .section-sixth {
+    height: 1290px;
+    padding-top: 230px;
+  }
+  .input-underline {
+    background-color: #ffffff;
+    border: 1px solid;
   }
 }
 
@@ -1418,154 +1582,5 @@ input::placeholder {
     height: 252px;
     margin: 0 auto;
     margin-top: 85px;
-  }
-}
-/* Section Sixth End */
-
-.catalog-title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: #e3b873;
-  margin-bottom: 47px;
-}
-
-.navigation-list__catalog {
-  list-style: none;
-  padding: 0;
-}
-
-.navigation-list__catalog a {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 38px;
-  color: #ffffff;
-  font-family: Nunito Sans;
-}
-
-.navigation-list__catalog a:hover {
-  color: #e3b873;
-  transition: color 0.5s;
-}
-
-/* Section Sixth End */
-
-.catalog {
-  background-image: url("../images/image_overlay.jpg");
-  background-size: cover;
-  height: 864px;
-  position: relative;
-  margin-bottom: 110px;
-}
-
-.cataog-block {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  z-index: 1;
-}
-
-.navigation-list__catalog {
-  list-style: none;
-  padding: 0;
-}
-
-.catalog-title {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 37px;
-  text-transform: uppercase;
-  margin-bottom: 47px;
-  color: #e3b873;
-}
-
-.navigation-list__catalog a:hover {
-  color: #e3b873;
-  transition: color 0.5s;
-}
-
-.navigation-list__catalog a {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 38px;
-  color: #ffffff;
-  text-decoration: 0;
-}
-
-.navigation-list__catalog li,
-a {
-  margin-bottom: 7px;
-}
-
-.catalog-gallery {
-  display: flex;
-}
-
-.left-col {
-  margin-top: -45px;
-}
-
-.right-col {
-  margin-top: -120px;
-  margin-bottom: 37px;
-  margin-left: 43px;
-}
-
-.catalog-images__col__left_one {
-  margin-bottom: 39px;
-}
-
-.catalog-images__col__right_one {
-  margin-bottom: 37px;
-}
-
-.catalog-wrap {
-  margin-top: 140px;
-}
-
-.catalog-overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-@media screen and (max-width: 1299px) {
-  .navigation-list__catalog {
-    display: none;
-  }
-  .cataog-block {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-  .catalog-title {
-    text-align: center;
-    margin-top: -250px;
-  }
-  .catalog-gallery {
-    display: none;
-  }
-  .catalog-overlay {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  .catalog {
-    width: 340px;
-    height: 365px;
-    margin: 0 auto;
-    position: relative;
   }
 }
